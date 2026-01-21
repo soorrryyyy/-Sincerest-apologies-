@@ -14,7 +14,7 @@ const hintEl = document.getElementById("hint");
 const slides = [
   // Screen 1 — Landing
   {
-    pill: "🎀 Landing",
+    pill: "💗 25 Jan: Riya Day",
     title: "Happy Birthday, Riya 🎀",
     subtitle: "(Ishika, but always Riya to me)",
     kind: "text",
@@ -177,8 +177,12 @@ function popFloat(symbol, count) {
 }
 
 function popHearts(n = 8) {
-  popFloat("❤", n);
+  const hearts = ["💗","💖","💕","💞","💝","❤️","🩷","💘","💟","❣️"];
+  for (let k = 0; k < n; k++) {
+    popFloat(hearts[Math.floor(Math.random() * hearts.length)], 1);
+  }
 }
+
 function popSparkles(n = 4) {
   popFloat("✨", n);
 }
