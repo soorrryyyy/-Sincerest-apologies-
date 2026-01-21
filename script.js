@@ -19,7 +19,7 @@ const slides = [
     subtitle: "(Ishika, but always Riya to me)",
     kind: "text",
     paragraphs: [],
-    button: { text: "Tap to enter →" },
+    button: { text: "Let's go →" },
     sparkles: true
   },
 
@@ -47,23 +47,35 @@ const slides = [
       "I couldn’t give you a wrapped gift…",
       "so I made you a little website instead 💗"
     ],
-    button: { text: "Open it →" },
+    button: { text: "Continue →" },
     confetti: true
   },
 
-  // Screen 4 — 3 things I adore about you (cards)
   {
-    pill: "🩷 3 things",
-    title: "3 things I adore about you",
-    subtitle: "",
-    kind: "cards",
-    cards: [
-      "You’re genuinely beautiful — inside and out.",
-      "Your voice is honestly my favorite sound.",
-      "I loved spending time with you… it felt easy and real."
-    ],
-    button: { text: "More →" }
-  },
+  pill: "💭 One more thing",
+  title: "Before we continue…",
+  subtitle: "",
+  kind: "text",
+  body: [
+    "I just wanted to remind you of a few things I genuinely love about you 💗"
+  ],
+  button: { text: "Okay →" }
+},
+
+
+{
+  pill: "🩷 3 things",
+  title: "Before we go on…",
+  subtitle: "here are 3 things I adore about you 💗",
+  kind: "cards",
+  cards: [
+    "You’re genuinely beautiful - inside and out.",
+    "Your voice is honestly my favorite sound.",
+    "I loved spending time with you… it felt special in the simplest way."
+  ],
+  button: { text: "More →" }
+},
+
 
   // Screen 5 — You made me better
   {
@@ -342,7 +354,7 @@ function goPrev() {
 }
 
 // regular hearts at intervals
-setInterval(() => popHearts(2), 900);
+setInterval(() => popHearts(4), 650);
 
 // start
 setSlide(idx);
