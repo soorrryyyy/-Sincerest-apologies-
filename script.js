@@ -256,19 +256,33 @@ function setSlide(i) {
   // buttons
   clearNode(actionsEl);
 
+  // Back button (shows on every screen except the first)
+  if (idx > 0) {
+    const back = document.createElement("button");
+    back.className = "btn-ghost";
+    back.textContent = "← Previous";
+    back.onclick = () => {
+      popHearts(8);
+      goPrev();
+    };
+    actionsEl.appendChild(back);
+  }
+
+  // Next button (only if the slide has it)
   if (s.button) {
-    const b = document.createElement("button");
-    b.className = "btn-primary";
-    b.textContent = s.button.text || "Next →";
-    b.onclick = () => {
+    const next = document.createElement("button");
+    next.className = "btn-primary";
+    next.textContent = s.button.text || "Next →";
+    next.onclick = () => {
       popHearts(14);
       goNext();
     };
-    actionsEl.appendChild(b);
+    actionsEl.appendChild(next);
     hintEl.style.display = "block";
   } else {
     hintEl.style.display = "none";
   }
+
 
   // enter effects
   popHearts(6);
@@ -315,6 +329,11 @@ function transitionTo(nextIdx) {
 function goNext() {
   if (idx >= slides.length - 1) return;
   transitionTo(idx + 1);
+}
+
+function goPrev() {
+  if (idx <= 0) return;
+  transitionTo(idx - 1);
 }
 
 // regular hearts at intervals
