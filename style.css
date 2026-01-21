@@ -79,9 +79,11 @@ body{
 }
 
 .subtitle{
-  margin:0 0 10px;
-  color: rgba(0,0,0,.55);
-  font-size: 13px;
+  margin: 0 0 12px;
+  color: rgba(0,0,0,.78);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
 }
 
 .body{
@@ -147,9 +149,18 @@ button:active{ transform: scale(.98); }
   box-shadow: 0 10px 24px rgba(255,47,134,.25);
 }
 .btn-ghost{
-  background: rgba(0,0,0,.04);
-  color: var(--text);
-  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,79,154,.12);
+  color: #b10052;
+  border: 1px solid rgba(255,79,154,.35);
+  box-shadow: 0 10px 24px rgba(255,47,134,.08);
+}
+.btn-ghost:hover{
+  filter: brightness(0.98);
+}
+
+.btn-ghost:active{
+  transform: scale(0.98);
+  filter: brightness(0.96);
 }
 
 .hint{
