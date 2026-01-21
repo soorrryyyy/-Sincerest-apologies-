@@ -4,7 +4,15 @@
   --card:#ffffffcc;
   --text:#1c1c1c;
   --muted:#5f5f5f;
-  --accent:#ff4f9a;
+
+  /* NEW (non-pink) accent palette: Indigo / Plum */
+  --accent:#6D28D9;
+  --accent2:#4C1D95;
+  --accent-soft: rgba(109,40,217,.12);
+  --accent-border: rgba(109,40,217,.28);
+  --accent-shadow: rgba(109,40,217,.22);
+  --accent-glow: rgba(109,40,217,.10);
+
   --shadow: 0 18px 45px rgba(0,0,0,.12);
   --radius: 22px;
 }
@@ -13,7 +21,10 @@
 html,body{ height:100%; }
 body{
   margin:0;
-  font-family: "Quicksand", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+
+  /* NEW font */
+  font-family: "Sora", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+
   color:var(--text);
   background:
     radial-gradient(1200px 800px at 20% 10%, var(--bg2), transparent),
@@ -67,34 +78,40 @@ body{
   font-size:13px;
   padding:8px 12px;
   border-radius:999px;
-  background:rgba(255,79,154,.12);
-  color: #b10052;
-  border:1px solid rgba(255,79,154,.25);
+
+  /* NEW accent */
+  background: var(--accent-soft);
+  color: var(--accent2);
+  border: 1px solid var(--accent-border);
 }
 
 .title{
   margin:6px 0 8px;
-  font-family: "Playfair Display", serif;
+
+  /* NEW font */
+  font-family: "Fraunces", serif;
+
   font-size: clamp(24px, 3.6vw, 40px);
   line-height:1.12;
   letter-spacing: .2px;
 
-  background: linear-gradient(90deg, #ff2f86, #b10052);
+  /* NEW gradient (non-pink) */
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-
 .subtitle{
   margin: 0 0 12px;
-  color: #b10052;
+
+  /* NEW color */
+  color: var(--accent2);
+
   font-size: 14px;
   font-weight: 700;
   line-height: 1.35;
 }
-
-
 
 .body{
   font-size: clamp(16px, 2.4vw, 19px);
@@ -105,7 +122,6 @@ body{
   overflow:auto;
   padding-right: 6px;
 }
-
 
 .body p{ margin: 0 0 10px; }
 
@@ -154,15 +170,18 @@ button{
 button:active{ transform: scale(.98); }
 
 .btn-primary{
-  background: linear-gradient(180deg, #ff5aa3, #ff2f86);
+  /* NEW accent */
+  background: linear-gradient(180deg, #8B5CF6, #6D28D9);
   color:white;
-  box-shadow: 0 10px 24px rgba(255,47,134,.25);
+  box-shadow: 0 10px 24px var(--accent-shadow);
 }
+
 .btn-ghost{
-  background: rgba(255,79,154,.12);
-  color: #b10052;
-  border: 1px solid rgba(255,79,154,.35);
-  box-shadow: 0 10px 24px rgba(255,47,134,.08);
+  /* NEW accent */
+  background: var(--accent-soft);
+  color: var(--accent2);
+  border: 1px solid var(--accent-border);
+  box-shadow: 0 10px 24px var(--accent-glow);
 }
 .btn-ghost:hover{
   filter: brightness(0.98);
