@@ -56,17 +56,17 @@ const slides = [
   title: "Before we continue…",
   subtitle: "",
   kind: "text",
-  body: [
-    "I just wanted to remind you of a few things I genuinely love about you 💗"
-  ],
+//   body: [
+//     "I just wanted to remind you of a few things I genuinely love about you 💗"
+//   ],
   button: { text: "Okay →" }
 },
 
 
 {
-  pill: "🩷 3 things",
-  title: "Before we go on…",
-  subtitle: "here are 3 things I adore about you 💗",
+  pill: "🩷🩷🩷",
+  title: "Here are a few things I adore about you 💗",
+//   subtitle: "here are 3 things I adore about you 💗",
   kind: "cards",
   cards: [
     "You’re genuinely beautiful - inside and out.",
@@ -81,35 +81,56 @@ const slides = [
   {
     pill: "✨ You made me better",
     title: "You made me better",
-    subtitle: "(keep it wholesome)",
+    // subtitle: "(keep it wholesome)",
     kind: "list",
-    before: "Because of you, I started becoming the version of me I like:",
+    before: "Because of you, I’ve been trying to become a better version of me - like:",
     items: [
-      "I finally started reading a book 📖",
-      "I started caring about my skin (yes, seriously)",
-      "I even started watching GOT 😭"
+      "I've started reading books 📖",
+      "I started caring about my skin and health",
+      "I've almost completed GOT 😭"
     ],
-    after: "Thank you for that, Riya.",
-    button: { text: "One more page →" }
+    // after: "Thank you for that, Riya.",
+    button: { text: "Keep going →" }
   },
 
   // Screen 6 — Little timeline
-  {
-    pill: "🕰️ Memory lane",
-    title: "Little timeline",
-    subtitle: "(as a “memory lane” gift)",
-    kind: "list",
-    before: "A few dates I’ll always remember:",
-    items: [
-      "23 Sep — we matched, and reels became a daily thing",
-      "8 Oct — you said “let’s take this to the next level”",
-      "14 Nov — “it would be great if we dated”",
-      "29 Nov — our first date (I still smile thinking of it)",
-      "6 Dec — “I love you, Riya” … “I loveeee you tooo”"
-    ],
-    button: { text: "Keep going →" },
-    scrollHearts: true
-  },
+//   {
+//     pill: "🕰️ Memory lane",
+//     title: "Little timeline",
+//     // subtitle: "(as a “memory lane” gift)",
+//     kind: "list",
+//     before: "A few dates I’ll always remember:",
+//     items: [
+//       "23 Sep — We matched, and reels became a daily thing",
+//       "8 Oct — You said “let’s take a step further to see where this connection could lead”",
+//       "14 Nov — “it would be great if we date”",
+//       "29 Nov — our first date (I still smile thinking of it)",
+//       "6 Dec — “I love you, Riya” … “I loveeee you tooo”"
+//     ],
+//     button: { text: "Keep going →" },
+//     scrollHearts: true
+//   },
+
+
+{
+  pill: "🕰️ Memory lane",
+  title: "Little timeline",
+  // subtitle: "(as a “memory lane” gift)",
+  kind: "list",
+  before: "A few dates I’ll always remember:",
+  items: [
+    "23 Sep — We matched, and reels became a daily thing",
+    "8 Oct — You said “let’s take a step further to see where this connection could lead”",
+    "14 Nov — “it would be great if we date”",
+    "29 Nov — Our first date (I still smile thinking of it)",
+    "       I was in the cab and you were already in CP - I was so nervous. But the moment I called you outside Social… and then I saw you… my smile turned on automatically. I was genuinely so, so happy to meet you in person.",
+    "       And later, when we were sitting on a bench, an aunty came, put her hands on our heads and said “Tum dono ki jodi salamat rakhe.” From the inside I was like: “Aap mere saare paise le lo… aapke muh mein ghee shakkar.” 😭🩷",
+    "6 Dec — “I love you Ria 💝” … “I loveeee u tooo”"
+  ],
+  button: { text: "Keep going →" },
+  scrollHearts: true
+},
+
 
   // Screen A (Part 1)
   {
