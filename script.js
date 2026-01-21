@@ -282,10 +282,11 @@ function setSlide(i) {
       goNext();
     };
     actionsEl.appendChild(next);
-    hintEl.style.display = "block";
+        if (hintEl) hintEl.style.display = "none";
   } else {
-    hintEl.style.display = "none";
+    if (hintEl) hintEl.style.display = "none";
   }
+
 
 
   // enter effects
