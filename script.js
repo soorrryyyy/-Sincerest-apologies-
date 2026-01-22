@@ -124,7 +124,7 @@ const slides = [
     "14 Nov — “it would be great if we date”",
     "29 Nov — Our first date (I still smile thinking of it)",
     "       I was in the cab and you were already in CP - I was so nervous. But the moment I called you outside Social… and then I saw you… my smile turned on automatically. I was genuinely so, so happy to meet you in person.",
-    "       And later, when we were sitting on a bench, an aunty came, put her hands on our heads and said “Tum dono ki jodi salamat rakhe.” From the inside I was like: “Aap mere saare paise le lo… aapke muh mein ghee shakkar.” 😭🩷",
+    "       And later, when we were sitting on the bench, that aunty came, put her hands on our heads and said “Tum dono ki jodi salamat rahe.” From the inside I was like: “Aap 10-20 kya mere saare paise rakh lo… aapke muh mein ghee shakkar.” 😭🩷",
     "6 Dec — “I love u Ria 💝” … “I loveeee u tooo”"
   ],
   button: { text: "Go on →" },
@@ -370,11 +370,18 @@ function transitionTo(nextIdx) {
   setTimeout(() => {
     idx = Math.max(0, Math.min(slides.length - 1, nextIdx));
     setSlide(idx);
+
+    // NEW: always start the next/prev slide from the top
+    bodyEl.scrollTop = 0;                      // reset the scrollable text area
+    window.scrollTo(0, 0);                     // extra safety (mobile browsers)
+    requestAnimationFrame(() => { bodyEl.scrollTop = 0; }); // iOS-friendly
+
     card.classList.remove("fade-out");
     card.classList.add("fade-in");
     setTimeout(() => card.classList.remove("fade-in"), 350);
   }, 280);
 }
+
 
 function goNext() {
   if (idx >= slides.length - 1) return;
