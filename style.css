@@ -115,6 +115,19 @@ body{
 
 .body p{ margin: 0 0 10px; }
 
+.body p.quote{
+  margin: 14px 0;
+  padding: 12px 14px;
+  border-left: 4px solid #ff2f86;
+  background: rgba(255,47,134,.10);
+  border-radius: 14px;
+
+  font-weight: 800;
+  font-size: 1.05em;
+  line-height: 1.55;
+}
+
+
 .body ul{
   margin:10px 0 14px 18px;
   padding:0;
