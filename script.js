@@ -140,7 +140,7 @@ const slides = [
     kind: "text",
     paragraphs: [
       "Riya, I want to tell you that I messed up big time.",
-      "Because on our second date, which I thought would happen around 10–11th Jan, I properly wanted to propose to you, and that’s why I was continuously thinking about you. And because of that came the overthinking. Tumhe pta to h kitna faltu sochta hu mei. That’s why I’ve never taken the first step in our relationship, thinking that it might ruin what we have. And it was the overthinking that was the cause of this mess.",
+      "Because on our second date, which I thought would happen around 10–11th Jan, I properly wanted to propose to you, and that’s why I was continuously thinking about you. And because of that came the overthinking. Tumhe pta to h kitna faltu sochta hu mei. That’s why I’ve never taken the first step in our relationship, thinking that it might ruin what we have. And it was the overthinking that caused this mess.",
       "I am so so so sorrryyyyy."
     ],
     button: { text: "Please read →" }
@@ -156,8 +156,8 @@ const slides = [
       "The next day, I tried being nonchalant and asked you if you wanted to come back. Everything happened so suddenly, and the obvious and expected answer was no.",
       "Not a single day has gone by since then without you crossing my mind. You became my 11:11. I check my phone multiple times a day just to see if you’ve messaged… but why would you after what I did.",
       "You said we’re way different. I actually think that’s a good thing. In a way, you complete me. Thode thoughts alag h toh arguments toh honge hi… but that’s what makes a relationship interesting and fun.",
-    "“If both people agree on everything, then one of them is unnecessary na bc.” - Wisely said by our very own Lord Manoj Bajpayee (Family Man)",
-      "So now, very chalantly, I am saying that I miss you a hell lot and would love to be back in the relationship — with you in it, obviously."
+    "“If both people agree on everything, then one of them is unnecessary na bc.” - Wisely said by our very own Lord Manoj Bajpayee (Family Man) 😭😭",
+      "So now, very chalantly, I am saying that I miss you a hell lot and would love to be back in the relationship - with you in it, obviously."
     ],
     button: { text: "Pls aage padho 😭 →" }
   },
@@ -169,7 +169,7 @@ const slides = [
     subtitle: "",
     kind: "text",
     paragraphs: [
-    "Sorrrrryyyyy for thinking and saying that you are not serious for this relationship. Clearly, you were, and so am I — just that ki mei bahut bada chutiya hoon and overthink kar jaata hoon faltu mei.",
+    "Sorrrrryyyyy for thinking and saying that you are not serious for this relationship. Clearly, you were, and so am I - just that ki mei bahut bada chutiya hoon and overthink kar jaata hoon faltu mei.",
     "QUOTE: Ek galti toh khuda bhi maaf karta hai.",
     "QUOTE: Agar baat zaroori hai toh insaan bhool jao, aur agar insaan zaroori hai toh baat bhool jao.",
     " ", // keep a space (NOT empty string) if you want a blank line gap
