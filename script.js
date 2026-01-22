@@ -125,54 +125,57 @@ const slides = [
     "29 Nov — Our first date (I still smile thinking of it)",
     "       I was in the cab and you were already in CP - I was so nervous. But the moment I called you outside Social… and then I saw you… my smile turned on automatically. I was genuinely so, so happy to meet you in person.",
     "       And later, when we were sitting on a bench, an aunty came, put her hands on our heads and said “Tum dono ki jodi salamat rakhe.” From the inside I was like: “Aap mere saare paise le lo… aapke muh mein ghee shakkar.” 😭🩷",
-    "6 Dec — “I love you Ria 💝” … “I loveeee u tooo”"
+    "6 Dec — “I love u Ria 💝” … “I loveeee u tooo”"
   ],
-  button: { text: "Keep going →" },
+  button: { text: "Go on →" },
   scrollHearts: true
 },
 
 
   // Screen A (Part 1)
   {
-    pill: "🫠 Screen A",
-    title: "Screen A (Part 1)",
+    pill: "Apology",
+    title: "Apology",
     subtitle: "",
     kind: "text",
     paragraphs: [
       "Riya, I want to tell you that I messed up big time.",
-      "Because on our second date, which I thought would happen around 10–11th Jan, I properly wanted to propose to you, and that’s why I was continuously thinking about you. And because of that came the overthinking (you know me), I overthink a lot. That’s why I’ve never taken the first step in our relationship, thinking that it might ruin what we have. And it was the overthinking that was the cause of this breakup.",
+      "Because on our second date, which I thought would happen around 10–11th Jan, I properly wanted to propose to you, and that’s why I was continuously thinking about you. And because of that came the overthinking. Tumhe pta to h kitna faltu sochta hu mei. That’s why I’ve never taken the first step in our relationship, thinking that it might ruin what we have. And it was the overthinking that was the cause of this mess.",
       "I am so so so sorrryyyyy."
     ],
-    button: { text: "Next →" }
+    button: { text: "Please read →" }
   },
 
   // Screen B (Part 2)
   {
-    pill: "🫠 Screen B",
-    title: "Screen B (Part 2)",
+    pill: "Apology",
+    title: "Apology (Contd.)",
     subtitle: "",
     kind: "text",
     paragraphs: [
-      "The next day, I tried being nonchalant and asked you if you wanted to come back. All of this happened all of a sudden, and the obvious and expected answer was no.",
-      "Not one day has gone by since that day when your thought did not cross my mind. You became my 11:11. I check my phone multiple times a day just to see if you’ve messaged or not, but why would you after what I have done.",
+      "The next day, I tried being nonchalant and asked you if you wanted to come back. Everything happened so suddenly, and the obvious and expected answer was no.",
+      "Not a single day has gone by since then without you crossing my mind. You became my 11:11. I check my phone multiple times a day just to see if you’ve messaged… but why would you after what I did.",
+      "You said we’re way different. I actually think that’s a good thing. In a way, you complete me. Thode thoughts alag h toh arguments toh honge hi… but that’s what makes a relationship interesting and fun.",
+    "“If both people agree on everything, then one of them is unnecessary na bc.” - Wisely said by our very own Lord Manoj Bajpayee (Family Man)",
       "So now, very chalantly, I am saying that I miss you a hell lot and would love to be back in the relationship — with you in it, obviously."
     ],
-    button: { text: "Next →" }
+    button: { text: "Pls aage padho 😭 →" }
   },
 
   // Screen C (Part 3) — Final
   {
-    pill: "🫠 Screen C",
-    title: "Screen C (Part 3)",
+    pill: "Apology",
+    title: "Apology (Contd. Further)",
     subtitle: "",
     kind: "text",
     paragraphs: [
-      "Sorrrrryyyyy for thinking and saying that you are not serious for this relationship. Clearly, you were, and so am I — just that ki main bahut bada chutiya hoon and overthink kar jaata hoon. Ek galti toh khuda bhi maaf karta hai.",
-      "I wanna say 1 more thing:",
-      "“Agar baat zaroori hai toh insaan bhool jao, and agar insaan jaruri h to baat bhool jao.”",
-      "",
-      "You are very important for me. Remove 9th, 10th, and 11th Jan from your life and then think, pleaasseeeeeeeee."
+    "Sorrrrryyyyy for thinking and saying that you are not serious for this relationship. Clearly, you were, and so am I — just that ki mei bahut bada chutiya hoon and overthink kar jaata hoon faltu mei.",
+    "QUOTE: Ek galti toh khuda bhi maaf karta hai.",
+    "QUOTE: Agar baat zaroori hai toh insaan bhool jao, aur agar insaan zaroori hai toh baat bhool jao.",
+    " ", // keep a space (NOT empty string) if you want a blank line gap
+    "You are very important for me. Remove 9th, 10th, and 11th Jan from your life and then think, pleaasseeeeeeeee."
     ],
+
     button: null
   }
 ];
@@ -281,14 +284,23 @@ function setSlide(i) {
       p2.textContent = s.after;
       bodyEl.appendChild(p2);
     }
-  } else {
-    (s.paragraphs || []).forEach((txt) => {
-      if (!txt) return;
-      const p = document.createElement("p");
+} else {
+  (s.paragraphs || []).forEach((txt) => {
+    if (!txt) return;
+
+    const p = document.createElement("p");
+
+    // Quote callout support
+    if (txt.startsWith("QUOTE:")) {
+      p.classList.add("quote");
+      p.textContent = txt.replace(/^QUOTE:\s*/, "");
+    } else {
       p.textContent = txt;
-      bodyEl.appendChild(p);
-    });
-  }
+    }
+
+    bodyEl.appendChild(p);
+  });
+}
 
   // buttons
   clearNode(actionsEl);
