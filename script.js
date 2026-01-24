@@ -242,7 +242,7 @@ const slides = [
     "Khona nhi chahta tumhe,",
     "ye ehsaas ab hone lga h.",
     "Ek aur mauka dedo,",
-    "mann ab tumhari yaad mei khone lga h.",
+    "mann ab tumhari yaad mei rone lga h.",
     "Galti hui, maan liya,",
     "galat mei tha, jaan liya,",
     "ab kuch bhi aisa nhi karunga jo tumhe bura lge,",
