@@ -139,9 +139,9 @@ const slides = [
     kind: "text",
     paragraphs: [
       "I want you to know what actually happened in that first few days of January.",
-      "Two of my friends wanted to know all the details about our relationship, and I told them. After that, they wrote that “misssinnggggggg youuuuuu” message.",
+      "Two of my friends wanted to know the details about our relationship, and I told them. After that, they wrote that “misssinnggggggg youuuuuu” message saying ki bhai express kia kar jo soch rha h.",
       "Honestly, I was pretty chill when I was handling things on my own. But once they got involved, they kept pushing the wrong suggestions “ye kar”, “wo kar”.",
-      "I listened to them because unki bandi hinge se bani thi recently, I thought they knew better ki kab kya bolna hota h, kaise chize handle krni hoti h, next move kya hona chiye and all that. But now I've realised ki koi “love guru” jaisi chiz hoti hi nhi h, sabko apna apna dekhna hota h. Same chiz har jagah chl hi nhi skti.",
+      "I listened to them because I thought ki mei ache se shayad express nhi kar paa rha chize over text, unki bandi bhi hinge se bani thi recently, I thought they knew better ki kab kya bolna hota h, kaise chize handle krni hoti h, next move kya hona chiye and all that. But now I've realised ki koi “love guru” jaisi chiz hoti hi nhi h, sabko apna apna dekhna hota h. Same chiz har jagah chl hi nhi skti.",
       "And when things didn’t go the way they expected, they were like: “nhi chlega, unfollow krde blah blah” and mei bhi chutiya tha jo unki baaton mei aagya 😭😭",
       "Un do bhadwo ki maa ki chut 4 baar",
       "I learned ki relationship ki baatein dono ke beech hi rehni chahiye. Kisi third party ko entertain karne ki zarurat hi nahi hoti. Jab tak main khud handle kar raha tha, sab theek tha - un do madrchod ki “advice” ne hi poora scene chudhwa diya."
@@ -156,10 +156,10 @@ const slides = [
     subtitle: "",
     kind: "text",
     paragraphs: [
-      "Ek aur chiz jo mujhe samajh aayi:",
+      "Ek aur chiz jo mujhe smjh aayi:",
       "Main ghar ka chhota beta hoon - ghar walon ne mujhe thoda sar pe chadha rakha hai. Mumma abhi bhi mujhe chhote bacche jaisa treat karti hain, and unki wajah se meri aadat kharaab ho rkhi h.",
       "Isiliye main thoda attention-seeking ho jaata hoon (sabke saath nahi). Waise I’m mature - duniya se mujhe farak nahi padta, but the people I love - parents, bhai, Saksham and a few other friends, and you - in sabse mujhe farak padta hai.",
-      "Bachpan se “princess treatment” mila hai 😭… woh mere nature ka part ban gaya. Galti meri hai ki main kabhi-kabhi wohi cheez dusron se expect kar leta hoon.",
+      "Bachpan se “princess treatment” mila hai 😭… woh mere nature ka part ban gaya. Galti meri hai ki main kabhi-kabhi wohi cheez dusron se expect kar leta hu.",
       "Ab main kaafi zyada mature ho gya hu (I think - at least I’m trying).",
       "And I’m telling you all this because you genuinely matter to me."
     ],
