@@ -37,6 +37,24 @@ const slides = [
     button: { text: "Next →" }
   },
 
+
+  // NEW — Birthday Sher (insert after Screen 2: "Birthday wish")
+{
+  pill: "💗 Birthday sher",
+  title: "💗 Birthday sher",
+  subtitle: "-by Me + GPT (coz abhi pura khud likhne ki aukat nhi h 😭)",
+  kind: "text",
+  paragraphs: [
+    "Aapka har khwaab hakeekat bane,",
+    "Aapki har chahat ko wajood mile.",
+    "Rab se meri bas yahi guzarish h",
+    "Aapke hisse mein hamesha sukoon, izzat aur pyaar likhe."
+  ],
+  button: { text: "Awww <3 →" },
+  sparkles: true,
+  confetti: true // (optional) uncomment if you want a burst here too
+},
+
   // Screen 3 — A tiny gift
   {
     pill: "🎁 A tiny gift",
@@ -209,9 +227,30 @@ const slides = [
     " ", // keep a space (NOT empty string) if you want a blank line gap
     "You are very important for me. Remove 9th, 10th, and 11th Jan from your life and then think, pleaasseeeeeeeee."
     ],
+  button: { text: "One more thing →" }
+    
+  },
 
+
+  // NEW — Apology Shayari (insert wherever you want in the slides array)
+{
+  pill: "Apology",
+  title: "Arz kiya h.....",
+  subtitle: "",
+  kind: "text",
+  paragraphs: [
+    "Khona nhi chahta tumhe,",
+    "ye ehsaas ab hone lga h.",
+    "Ek aur mauka dedo,",
+    "mann ab tumhari yaad mei khone lga h.",
+    "Galti hui, maan liya,",
+    "galat mei tha, jaan liya,",
+    "ab kuch bhi aisa nhi karunga jo tumhe bura lge,",
+    "ye dil ne thaan liya."
+  ],
     button: null
-  }
+},
+
 ];
 
 let idx = 0;
